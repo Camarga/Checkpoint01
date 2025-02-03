@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Grid 1</title>
+
+    <style>
+        body {
+            background-color: ghostwhite;
+        }
+
+        .gridOne {
+            display: grid;
+            width: 500px;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 15px;
+            text-align: left;
+        }
+
+        .gridTwo {
+            display: grid;
+            width: 500px;
+            grid-template-columns: 1fr 1fr 2fr;
+            text-align: left;
+        }
+
+        .gridTwo_whatever {
+            background-color: red;
+        }
+
+        .gridTwo_text {
+            background-color: blue;
+        }
+
+        .gridTwo_I_want {
+            background-color: yellow;
+        }
+
+        .gridThree {
+            display: grid;
+            width: 500px;
+            height: 300px;
+            grid-template-rows: 1fr 3fr;
+            background-color: darkgray;
+        }
+
+        .gridThree img {
+            width: 500px;
+            height: 225px;
+            object-fit: cover;
+        }
+
+        .gridFour {
+            display: grid;
+            width: 500px;
+            grid-template-rows: 1fr 1fr;
+            background-color: green;
+            #gridFour_columns {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .gridFive {
+            display: grid;
+            width: 500px;
+            grid-template-rows: 1fr 1fr;
+            background-color: gainsboro;
+            #gridFive_columns {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 20px;
+                #gridFive_columns p,
+                img {
+                    height: 200px;
+                    width: 200px;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .gridSix {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            background-color: lightgray;
+            width: 500px;
+        }
+
+        .gridSix_text {
+            font-family: 'Pacifico', sans-serif;
+        }
+
+        i {
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+        }
+
+    </style>
+</head>
+<body>
+        <div class="gridOne">
+            <p>Hello World</p>
+            <p style="color: blue;">My Fantastic Content</p>
+        </div>
+
+        <div class="gridTwo">
+            <div class="gridTwo_whatever">
+                <p>whatever</p>
+            </div>
+            <div class="gridTwo_text">
+                <p>text</p>
+            </div>
+            <div class="gridTwo_I_want">
+                <p>I want</p>
+            </div>
+        </div>
+
+        <div class="gridThree">
+            <div class="gridThree_title">
+                <p>I love fries</p>
+            </div>
+            <div class="gridThree_image">
+                <img src="Images/fries-hero-bg.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="gridFour">
+            <div class="gridFour_text">
+                <P>My Even More Awesome Text</P>
+            </div>
+            <div id="gridFour_columns">
+                <p>My left text</p>
+                <p>My right text</p>
+            </div>        
+        </div>
+
+        <div class="gridFive">
+            <div class="gridFive_text">
+                <P>My Even More Awesome Text</P>
+            </div>
+            <div id="gridFive_columns">
+                <p><img src="Images/fries-hero-bg.jpg" alt=""></p>
+                <p><img src="Images/fries-multiply-bg.jpg" alt=""></p>
+            </div>        
+        </div>
+
+        <div class="gridSix">
+            <div class="gridSix_icon">
+                <i class="fa-solid fa-rainbow"></i>
+            </div>
+            <div class="gridSix_text">
+                <p>My awesome google font is applied here</p>
+            </div>
+        </div>
+</body>
+</html>
